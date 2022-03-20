@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore shyoon/shyoon.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build shyoon/shyoon.sln --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test shyoon/shyoon.sln --no-build --verbosity normal
